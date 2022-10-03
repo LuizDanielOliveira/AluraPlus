@@ -2,9 +2,11 @@
     --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
-    --cor-de-fundo: #00030C;
+    --cor-de-fundo: #02091d;
     --fonte-principal: 'Inter';
     --botao-azul-efeito: #3c92fa;
+    --fundo-scroll: hsl(236deg 44% 23%);
+    --cor-scroll: #02091d;
 }
 
 body {
@@ -21,7 +23,7 @@ body {
 }
 
 .principal {
-    background-image: url("img/Background.png");
+    background-color: #02091d;
     background-repeat: no-repeat;
     background-size: contain;
     align-items: center;
@@ -152,4 +154,37 @@ body {
 .container__botao:hover {
     background-color: var(--botao-azul-efeito);
     color: var(--cor-de-fundo);
+}
+
+::-webkit-scrollbar{
+
+width: 10px;
+
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--fundo-scroll);
+    border-radius: 2.5px;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor-scroll);
+    border-radius: 5px;
+
+}
+
+#voltar-ao-topo{
+
+    color: #c7c7c7;
+    height: 40px;
+    width: 4%;
+    margin-left: auto;
+    display: flex;
+    background-color: var(--botao-azul-efeito);
+    border-radius: 100px;
+}
+
+#voltar-ao-topo:hover{
+    cursor: pointer;
 }
